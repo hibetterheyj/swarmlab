@@ -31,10 +31,10 @@ classdef DroneViewer < handle
                 self.time_of_last_frame = time;
                 
                 if self.plot_initialized == 0 % Init plot
-                    x0 = 66; 
-                    y0 = 1; 
-                    width = 884;
-                    height = 973;
+                    x0 = 10; % 66
+                    y0 = 10; % 1
+                    width = 500; % 884
+                    height = 550; % 973
                     self.figure_handle = figure('Name','Drone viewer', ...
                         'NumberTitle','off', ...
                         'position', [x0, y0, width, height]); clf;

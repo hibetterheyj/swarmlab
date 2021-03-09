@@ -156,10 +156,10 @@ function plot_state(self, time, output_rate)
 
         % first time function is called, initialize plot and persistent vars
         if time == 0
-            x0 = 960; 
-            y0 = 0; 
-            width = 960;
-            height = 1080;
+            x0 = 520; % 960
+            y0 = 10; % 0
+            width = 480; % 960
+            height = 550; % 1080
             fig_handle = figure('Name','Drone state viewer', ...
                 'NumberTitle','off', 'position', [x0, y0, width, height]);
             tg = uitabgroup; % tabgroup
